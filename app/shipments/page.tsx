@@ -1,3 +1,5 @@
 export default function Shipments() {
-  return <h2>Shipments</h2>;
+  return <section className="flex-grow">
+    
+  </section>;
 }
