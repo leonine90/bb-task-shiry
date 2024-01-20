@@ -1,40 +1,43 @@
-import Image from 'next/image';
-import Link from 'next/link';
-import { DashboardIcon, ShipmentsIcon, ProfileIcon } from '@/components/icons';
+'use client';
 
-export default function Navbar() {
-  const menuItems = [
+import { FC } from 'react';
+import Image from 'next/image';
+import { DashboardIcon, ShipmentsIcon, ProfileIcon } from '@/components/icons';
+import type { NavbarItemProps } from './NavbarItem';
+import NavbarItem from './NavbarItem';
+
+const Navbar: FC = () => {
+  const menuItems: NavbarItemProps[] = [
     {
       title: 'Dashboard',
       url: '/',
-      icon: DashboardIcon
+      icon: DashboardIcon,
     },
     {
       title: 'My Shipments',
       url: '/shipments',
-      icon: ShipmentsIcon
+      icon: ShipmentsIcon,
     },
     {
       title: 'Collaboration',
       url: '/',
-      icon: ProfileIcon
+      icon: ProfileIcon,
     },
     {
       title: 'Profile',
       url: '/',
-      icon: ProfileIcon
+      icon: ProfileIcon,
     },
   ];
 
   return (
-    <nav className='bg-white flex h-full flex-grow max-w-60 py-5 flex-col items-center'>
-      <Image className='mb-16' src="/Logo.svg" width={130} height={40} alt="Shipment" />
-      {menuItems.map((item) => (
-        <Link className='flex items-center justify-center w-full gap-x-4 px-8 py-4 hover:border-r-2 border-r-primary hover:text-primary hover:font-bold' href={item.url} key={item.title}>
-          <item.icon />
-          <span className='flex-1'>{item.title}</span>
-        </Link>
+    <nav className='flex h-full max-w-60 flex-grow flex-col items-center bg-white py-5'>
+      <Image className='mb-16' src='/Logo.svg' width={130} height={40} alt='Shipment' />
+      {menuItems.map((item, index) => (
+        <NavbarItem key={index} {...item} />
       ))}
     </nav>
   );
-}
+};
+
+export default Navbar;

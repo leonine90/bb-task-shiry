@@ -6,12 +6,4 @@ import ProfileIcon from './ProfileIcon';
 import SearchIcon from './SearchIcon';
 import ShipmentsIcon from './ShipmentsIcon';
 
-export {
-  AirIcon,
-  CopyIcon,
-  DashboardIcon,
-  OceanIcon,
-  ProfileIcon,
-  SearchIcon,
-  ShipmentsIcon
-};
+export { AirIcon, CopyIcon, DashboardIcon, OceanIcon, ProfileIcon, SearchIcon, ShipmentsIcon };

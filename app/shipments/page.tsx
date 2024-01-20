@@ -1,5 +1,3 @@
 export default function Shipments() {
-  return (
-    <h2>Shipments</h2>
-  );
+  return <h2>Shipments</h2>;
 }
