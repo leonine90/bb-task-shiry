@@ -27,3 +27,7 @@ body {
     text-wrap: balance;
   }
 }
+
+.shipmentPoint {
+  left: -1.5px;
+}

@@ -1,13 +1,14 @@
 import ShipmentCard from '@/components/ShipmentCard';
 
+export type shipmentType = 'Air' | 'Sea' | 'Road';
 export interface Shipment {
   id: number;
   title: string;
   ownerCompany: string;
   origin: string;
   destination: string;
-  shipmentType: 'Air' | 'Sea' | 'Road';
-  productType: 'Electronics' | 'Clothing' | 'Books' | 'Food' | 'Toys';
+  shipmentType: shipmentType;
+  productType: string;
   boxes?: {
     number: number;
     weight: string;
@@ -42,10 +43,12 @@ export default async function Shipments() {
   const shipmentsData = await getShipments();
 
   return (
-    <section className='flex-grow'>
-      {shipmentsData.map((shipment, index) => (
-        <ShipmentCard key={index} shipment={shipment} />
-      ))}
+    <section className='flex-grow p-8'>
+      <div className='w-full lg:w-3/5 flex flex-col gap-y-4'>
+        {shipmentsData.map((shipment, index) => (
+          <ShipmentCard key={index} shipment={shipment} />
+        ))}
+      </div>
     </section>
   );
 }
