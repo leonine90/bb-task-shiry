@@ -31,3 +31,11 @@ body {
 .shipmentPoint {
   left: -1.5px;
 }
+
+.connector {
+  flex-grow: 1;
+  padding: 0 4px;
+  background-color: #04009a;
+  height: 1px;
+  align-self: center;
+}

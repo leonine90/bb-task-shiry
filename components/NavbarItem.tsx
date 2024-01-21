@@ -6,9 +6,10 @@ export interface NavbarItemProps {
   title: string;
   url: string;
   icon: FC<{ fillColor: string }>;
+  isActive?: boolean;
 }
 
-const NavbarItem: FC<NavbarItemProps> = ({ title, url, icon: IconComponent }) => {
+const NavbarItem: FC<NavbarItemProps> = ({ title, url, icon: IconComponent, isActive }) => {
   const [isHovered, setIsHovered] = useState(false);
 
   const handleMouseEnter = () => {

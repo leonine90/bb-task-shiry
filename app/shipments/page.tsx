@@ -1,6 +1,7 @@
 import ShipmentCard from '@/components/ShipmentCard';
 
 export type shipmentType = 'Air' | 'Sea' | 'Road';
+type ShipmentStatus = 'In Transit' | 'In Destination' | 'In Origin' | 'In Custom Clearance';
 export interface Shipment {
   id: number;
   title: string;
@@ -25,7 +26,7 @@ export interface Shipment {
     name: string;
     companyName: string;
   }[];
-  currentStatus: string;
+  currentStatus: ShipmentStatus;
 }
 
 async function getShipments(): Promise<Shipment[]> {

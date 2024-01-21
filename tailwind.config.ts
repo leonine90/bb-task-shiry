@@ -15,6 +15,10 @@ const config: Config = {
       colors: {
         primary: '#04009A',
       },
+      fontSize: {
+        '2xs': '0.7rem',
+        '3xs': '0.6rem',
+      },
     },
   },
   plugins: [],
