@@ -31,7 +31,7 @@ const Navbar: FC = () => {
   ];
 
   return (
-    <nav className='flex h-full max-w-60 flex-grow flex-col items-center bg-white py-5 fixed'>
+    <nav className='fixed flex h-full max-w-60 flex-grow flex-col items-center bg-white py-5'>
       <Image className='mb-16' src='/Logo.svg' width={130} height={40} alt='Shipment' />
       {menuItems.map((item, index) => (
         <NavbarItem key={index} {...item} />

@@ -44,7 +44,7 @@ export default async function Shipments() {
 
   return (
     <section className='flex-grow p-8'>
-      <div className='w-full lg:w-3/5 flex flex-col gap-y-4'>
+      <div className='flex w-full flex-col gap-y-4 lg:w-3/5'>
         {shipmentsData.map((shipment, index) => (
           <ShipmentCard key={index} shipment={shipment} />
         ))}
