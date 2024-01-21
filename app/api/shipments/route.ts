@@ -1,5 +1,5 @@
-import { NextResponse } from "next/server";
-import { readJson } from "@/helpers/readJson";
+import { NextResponse } from 'next/server';
+import { readJson } from '@/helpers/readJson';
 
 export async function GET() {
   try {

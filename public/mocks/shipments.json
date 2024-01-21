@@ -38,9 +38,7 @@
     },
     "tags": ["Clothing", "Accessories"],
     "details": "Fashion items and accessories for the upcoming season.",
-    "participants": [
-      { "id": 2, "name": "Jane Smith", "companyName": "XYZ Shipping" }
-    ],
+    "participants": [{ "id": 2, "name": "Jane Smith", "companyName": "XYZ Shipping" }],
     "currentStatus": "In Destination"
   },
   {
@@ -81,9 +79,7 @@
     },
     "tags": ["Food", "Perishable"],
     "details": "Fresh food items that need to be delivered quickly.",
-    "participants": [
-      { "id": 4, "name": "David Williams", "companyName": "ABC Logistics" }
-    ],
+    "participants": [{ "id": 4, "name": "David Williams", "companyName": "ABC Logistics" }],
     "currentStatus": "In Custom Clearance"
   },
   {
@@ -126,9 +122,7 @@
     },
     "tags": ["Electronics", "Fragile"],
     "details": "Latest electronic gadgets for a tech expo.",
-    "participants": [
-      { "id": 6, "name": "Sophia Miller", "companyName": "XYZ Shipping" }
-    ],
+    "participants": [{ "id": 6, "name": "Sophia Miller", "companyName": "XYZ Shipping" }],
     "currentStatus": "In Transit"
   },
   {
@@ -146,9 +140,7 @@
     },
     "tags": ["Clothing", "Accessories"],
     "details": "Fashion items for a global clothing brand.",
-    "participants": [
-      { "id": 7, "name": "Michael Brown", "companyName": "ABC Logistics" }
-    ],
+    "participants": [{ "id": 7, "name": "Michael Brown", "companyName": "ABC Logistics" }],
     "currentStatus": "In Custom Clearance"
   },
   {
@@ -169,9 +161,7 @@
     },
     "tags": ["Books", "Educational"],
     "details": "Educational materials for schools in the USA.",
-    "participants": [
-      { "id": 8, "name": "Oliver Wilson", "companyName": "Global Books" }
-    ],
+    "participants": [{ "id": 8, "name": "Oliver Wilson", "companyName": "Global Books" }],
     "currentStatus": "In Transit"
   },
   {
@@ -189,9 +179,7 @@
     },
     "tags": ["Food", "Perishable"],
     "details": "Specialty foods for an international food festival.",
-    "participants": [
-      { "id": 9, "name": "Eva Wilson", "companyName": "ABC Logistics" }
-    ],
+    "participants": [{ "id": 9, "name": "Eva Wilson", "companyName": "ABC Logistics" }],
     "currentStatus": "In Destination"
   },
   {
@@ -208,9 +196,7 @@
     },
     "tags": ["Toys", "Children"],
     "details": "Toys for a charitable initiative in Japan.",
-    "participants": [
-      { "id": 10, "name": "Sophie Johnson", "companyName": "XYZ Shipping" }
-    ],
+    "participants": [{ "id": 10, "name": "Sophie Johnson", "companyName": "XYZ Shipping" }],
     "currentStatus": "In Transit"
   },
   {
@@ -231,9 +217,7 @@
     },
     "tags": ["Electronics", "Fragile"],
     "details": "Bulk order of electronic devices for a tech store.",
-    "participants": [
-      { "id": 11, "name": "James Miller", "companyName": "ABC Logistics" }
-    ],
+    "participants": [{ "id": 11, "name": "James Miller", "companyName": "ABC Logistics" }],
     "currentStatus": "In Origin"
   },
   {
@@ -251,9 +235,7 @@
     },
     "tags": ["Clothing", "Accessories"],
     "details": "Designer clothing for a fashion exhibition.",
-    "participants": [
-      { "id": 12, "name": "Emma Davis", "companyName": "XYZ Shipping" }
-    ],
+    "participants": [{ "id": 12, "name": "Emma Davis", "companyName": "XYZ Shipping" }],
     "currentStatus": "In Custom Clearance"
   },
   {
@@ -274,9 +256,7 @@
     },
     "tags": ["Books", "Educational"],
     "details": "Educational materials for schools in the USA.",
-    "participants": [
-      { "id": 13, "name": "Ethan Wilson", "companyName": "Global Books" }
-    ],
+    "participants": [{ "id": 13, "name": "Ethan Wilson", "companyName": "Global Books" }],
     "currentStatus": "In Transit"
   },
   {
@@ -294,9 +274,7 @@
     },
     "tags": ["Food", "Perishable"],
     "details": "Fresh and exotic foods for a high-end restaurant.",
-    "participants": [
-      { "id": 14, "name": "Mia Brown", "companyName": "ABC Logistics" }
-    ],
+    "participants": [{ "id": 14, "name": "Mia Brown", "companyName": "ABC Logistics" }],
     "currentStatus": "In Custom Clearance"
   },
   {
@@ -334,9 +312,7 @@
     },
     "tags": ["Electronics", "Fragile"],
     "details": "Cutting-edge electronic devices for a tech expo.",
-    "participants": [
-      { "id": 16, "name": "Ava Smith", "companyName": "ABC Logistics" }
-    ],
+    "participants": [{ "id": 16, "name": "Ava Smith", "companyName": "ABC Logistics" }],
     "currentStatus": "In Transit"
   },
   {
@@ -357,9 +333,7 @@
     },
     "tags": ["Clothing", "Accessories"],
     "details": "High-end fashion items for a luxury boutique.",
-    "participants": [
-      { "id": 17, "name": "Noah Miller", "companyName": "Global Books" }
-    ],
+    "participants": [{ "id": 17, "name": "Noah Miller", "companyName": "Global Books" }],
     "currentStatus": "In Origin"
   },
   {
