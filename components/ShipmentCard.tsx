@@ -6,9 +6,7 @@ interface ShipmentCardProps {
 }
 
 const ShipmentCard: FC<ShipmentCardProps> = ({ shipment }) => {
-  return (
-    <h2>{shipment?.title}</h2>
-  );
+  return <h2>{shipment?.title}</h2>;
 };
 
 export default ShipmentCard;

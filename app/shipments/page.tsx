@@ -1,4 +1,4 @@
-import ShipmentCard from "@/components/ShipmentCard";
+import ShipmentCard from '@/components/ShipmentCard';
 
 export interface Shipment {
   id: number;
@@ -6,8 +6,8 @@ export interface Shipment {
   ownerCompany: string;
   origin: string;
   destination: string;
-  shipmentType: "Air" | "Sea" | "Road";
-  productType: "Electronics" | "Clothing" | "Books" | "Food" | "Toys";
+  shipmentType: 'Air' | 'Sea' | 'Road';
+  productType: 'Electronics' | 'Clothing' | 'Books' | 'Food' | 'Toys';
   boxes?: {
     number: number;
     weight: string;
@@ -30,7 +30,7 @@ export interface Shipment {
 async function getShipments(): Promise<Shipment[]> {
   const baseUrl = process.env.BASE_URL_LOCAL;
   const res = await fetch(`${baseUrl}api/shipments`);
-  
+
   if (!res.ok) {
     throw new Error('Failed to fetch data');
   }
@@ -41,7 +41,11 @@ async function getShipments(): Promise<Shipment[]> {
 export default async function Shipments() {
   const shipmentsData = await getShipments();
 
-  return <section className='flex-grow'>
-    { shipmentsData.map((shipment, index) => (<ShipmentCard key={index} shipment={shipment} />)) }
-  </section>;
+  return (
+    <section className='flex-grow'>
+      {shipmentsData.map((shipment, index) => (
+        <ShipmentCard key={index} shipment={shipment} />
+      ))}
+    </section>
+  );
 }
