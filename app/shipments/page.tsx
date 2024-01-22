@@ -31,7 +31,7 @@ export interface Shipment {
   currentStatus: ShipmentStatus;
 }
 
-async function getShipments(): Promise<Shipment[]> {
+export async function getShipments(): Promise<Shipment[]> {
   const baseUrl = process.env.BASE_URL_LOCAL;
   const res = await fetch(`${baseUrl}api/shipments`);
 
@@ -46,7 +46,7 @@ export default async function Shipments() {
   const shipmentsData = await getShipments();
 
   return (
-    <section className='flex-grow p-8'>
+    <section className='flex-grow p-2 py-4 md:p-8'>
       <ShipmentsList shipments={shipmentsData} />
     </section>
   );

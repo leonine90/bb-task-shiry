@@ -1,5 +1,4 @@
 import React, { FC } from 'react';
-import { convertDateFormat } from '@/utils/convertDate';
 import type { ShipmentStatus } from '@/app/shipments/page';
 import ShipmentCardProgress from './ShipmentCardProgress';
 

@@ -1,5 +1,3 @@
-'use client';
-
 import React, { FC } from 'react';
 import type { Shipment } from '@/app/shipments/page';
 import ShipmentCardHeader from './ShipmentCardHeader';
