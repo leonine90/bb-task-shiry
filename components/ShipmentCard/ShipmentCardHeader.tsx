@@ -15,13 +15,13 @@ const ShipmentCardHeader: FC<ShipmentCardHeaderProps> = ({ title, ownerCompany }
 
   return (
     <div className='flex items-center justify-between border-b p-4'>
-      <span className='text-neutral-500'>
+      <span className='text-xs text-neutral-500 md:text-sm'>
         Brand Name: <span className='font-medium text-neutral-950'>{ownerCompany}</span>
       </span>
-      <span className='flex items-center font-medium'>
+      <span className='flex items-center text-xs font-medium md:text-sm'>
         ID: <span ref={titleRef}>{title}</span>
         <span className='ml-2 cursor-pointer' onClick={handleCopy}>
-          <CopyIcon />
+          <CopyIcon width={18} height={18} />
         </span>
       </span>
     </div>

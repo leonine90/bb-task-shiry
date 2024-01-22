@@ -45,14 +45,14 @@ const ShipmentCardFooter: FC<ShipmentCardFooterProps> = ({
       <div className='flex items-center justify-between border-t p-4'>
         <div>
           {tags.map((tag, index) => (
-            <span className='mr-2 rounded-xl border px-2 py-1 text-xs' key={index}>
+            <span className='mr-2 rounded-xl border px-2 py-1 text-2xs md:text-xs' key={index}>
               {tag}
             </span>
           ))}
         </div>
         {hasDetails && (
           <button
-            className={`text-italic flex items-center text-nowrap rounded-md border-2 px-4 py-2 text-xs ${toggleDetails ? 'border-primary bg-transparent text-primary' : 'border-transparent bg-primary text-white'}`}
+            className={`text-italic flex items-center text-nowrap rounded-md border-2 px-2 py-1 text-xs md:px-4 md:py-2 ${toggleDetails ? 'border-primary bg-transparent text-primary' : 'border-transparent bg-primary text-white'}`}
             onClick={toggleDetailsHandler}
           >
             <i>{toggleDetails ? 'Hide Details' : 'View Details'}</i>

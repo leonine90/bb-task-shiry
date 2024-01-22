@@ -14,7 +14,7 @@ const ShipmentCardProgress: FC<ShipmentCardProgressProps> = ({ dates, currentSta
   return (
     <div className='flex items-end py-2 text-3xs'>
       <div className='flex flex-col'>
-        <div className='font-bold'>{convertDateFormat(dates?.start)}</div>
+        <div className='font-semibold md:font-bold'>{convertDateFormat(dates?.start)}</div>
         <div
           className={`h-2 w-2 rounded-full border text-3xl leading-none ${currentStatus === 'In Origin' ? 'border-primary bg-primary' : 'border-neutral-400 bg-neutral-400'}`}
         />
@@ -30,7 +30,7 @@ const ShipmentCardProgress: FC<ShipmentCardProgressProps> = ({ dates, currentSta
       </div>
       <div className='connector' />
       <div className='flex flex-col items-end'>
-        <div className='font-bold'>{convertDateFormat(dates?.end)}</div>
+        <div className='font-semibold md:font-bold'>{convertDateFormat(dates?.end)}</div>
         <div
           className={`h-2 w-2 rounded-full border text-3xl leading-none ${currentStatus === 'In Destination' ? 'border-primary bg-primary' : 'border-neutral-400 bg-neutral-400'}`}
         />

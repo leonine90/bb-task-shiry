@@ -59,7 +59,9 @@ const ShipmentCardBody: FC<ShipmentCardBodyProps> = ({ shipmentType, origin, des
         </div>
         <div className='flex flex-col items-end justify-center gap-y-1'>
           <span>Destination City</span>
-          <span className='rounded-xl border bg-primary px-2 py-1 text-white'>{destination}</span>
+          <span className='md:text-md rounded-xl border bg-primary px-2 py-1 text-center text-2xs text-white'>
+            {destination}
+          </span>
         </div>
       </div>
     </div>
