@@ -1,14 +1,16 @@
+import SearchBox from '@/components/SearchBox';
 import ShipmentCard from '@/components/ShipmentCard';
+import ShipmentsList from '@/components/ShipmentsList';
 
-export type shipmentType = 'Air' | 'Sea' | 'Road';
-type ShipmentStatus = 'In Transit' | 'In Destination' | 'In Origin' | 'In Custom Clearance';
+export type ShipmentType = 'Air' | 'Sea' | 'Road';
+export type ShipmentStatus = 'In Transit' | 'In Destination' | 'In Origin' | 'In Custom Clearance';
 export interface Shipment {
   id: number;
   title: string;
   ownerCompany: string;
   origin: string;
   destination: string;
-  shipmentType: shipmentType;
+  shipmentType: ShipmentType;
   productType: string;
   boxes?: {
     number: number;
@@ -45,11 +47,7 @@ export default async function Shipments() {
 
   return (
     <section className='flex-grow p-8'>
-      <div className='flex w-full flex-col gap-y-4 lg:w-3/5'>
-        {shipmentsData.map((shipment, index) => (
-          <ShipmentCard key={index} shipment={shipment} />
-        ))}
-      </div>
+      <ShipmentsList shipments={shipmentsData} />
     </section>
   );
 }

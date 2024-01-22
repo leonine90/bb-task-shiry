@@ -35,7 +35,7 @@ body {
 .connector {
   flex-grow: 1;
   padding: 0 4px;
-  background-color: #04009a;
+  background-color: rgb(163 163 163);
   height: 1px;
   align-self: center;
 }
